@@ -143,7 +143,7 @@ public class Program
             else if (choice == 7)
             {
                 Console.WriteLine("Please enter your task title");
-                string title = Console.ReadLine();
+                string title = Console.ReadLine() ??"";
                 var result = await service.SearchTasksAsync(title);
                 PrintTasks(result);
                 
