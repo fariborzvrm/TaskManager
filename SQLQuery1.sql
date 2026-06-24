@@ -1,0 +1,6 @@
+﻿CREATE TABLE Tasks
+(
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(100),
+    IsDone BIT
+);
