@@ -35,7 +35,7 @@ public class Program
         }
         foreach (var task in tasks)
         {
-            Console.WriteLine($"{task.Id} - {task.Title} - {(task.IsDone ? "Done" : "Pending")}");
+            Console.WriteLine($"{task.Id} - {task.Title} - {(task.IsDone ? "Done" : "Pending")} - {task.CreatedAt}");
         }
     }
 
